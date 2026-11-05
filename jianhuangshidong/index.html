@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鉴黄师动漫-审核题材动漫_内容分级科普_动漫审核常识_合规观看</title>
+<meta name="description" content="鉴黄师动漫聚焦审核题材动漫与内容分级常识，梳理审核类动画的题材设定、角色职业、分级标识含义与合规观看方式，帮助读者理解动漫审核工作，理性看待分级内容与年龄提示，选择适合自己的作品与观看渠道。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232b2f3a'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23f2c94c' stroke-width='4'/%3E%3Cpath d='M25 33l5 5 10-12' fill='none' stroke='%23f2c94c' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#23262f;
+  --ink-soft:#4b5160;
+  --paper:#f5f2ea;
+  --panel:#fffdf8;
+  --line:#ddd6c6;
+  --accent:#b3452f;
+  --accent-soft:#f0d9cf;
+  --gold:#c99a2e;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Songti SC","Noto Serif SC",Georgia,"Microsoft YaHei",serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+
+/* 顶部 */
+.topbar{
+  background:var(--ink);
+  color:#e9e5da;
+  font-size:13px;
+  letter-spacing:.06em;
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px;flex-wrap:wrap;gap:8px;}
+.topbar span{opacity:.75;}
+.topbar .stamp{color:var(--gold);opacity:1;}
+
+header.site-head{
+  background:var(--panel);
+  border-bottom:1px solid var(--line);
+}
+.site-head .wrap{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  padding-top:30px;padding-bottom:22px;gap:20px;flex-wrap:wrap;
+}
+.brand-block h1{
+  font-size:clamp(24px,4vw,38px);
+  letter-spacing:.04em;
+  line-height:1.3;
+  font-weight:700;
+}
+.brand-block .sub{
+  margin-top:8px;
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:.08em;
+}
+nav.mainnav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap;}
+nav.mainnav a{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:.05em;
+  padding-bottom:4px;
+  border-bottom:2px solid transparent;
+}
+nav.mainnav a:hover{color:var(--accent);border-bottom-color:var(--accent);text-decoration:none;}
+
+/* 首屏说明 */
+.lead{
+  background:linear-gradient(180deg,#fbf8f1 0%,var(--paper) 100%);
+  border-bottom:1px solid var(--line);
+}
+.lead .wrap{
+  display:grid;
+  grid-template-columns:1.55fr 1fr;
+  gap:40px;
+  padding-top:44px;padding-bottom:44px;
+  align-items:start;
+}
+.lead-text p{color:var(--ink-soft);font-size:16px;margin-top:16px;}
+.lead-text .tagline{
+  display:inline-block;
+  background:var(--accent-soft);
+  color:#7d2f1e;
+  font-size:13px;
+  letter-spacing:.1em;
+  padding:5px 14px;
+  border-radius:2px;
+}
+.lead-aside{
+  background:var(--panel);
+  border:1px solid var(--line);
+  padding:22px 24px;
+}
+.lead-aside h2{
+  font-size:15px;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:14px;
+  padding-bottom:10px;
+  border-bottom:1px dashed var(--line);
+}
+.lead-aside dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:14px;}
+.lead-aside dt{color:var(--ink-soft);white-space:nowrap;}
+.lead-aside dd{color:var(--ink);}
+
+/* 主体 */
+main{padding-bottom:60px;}
+section.block{padding:52px 0 8px;}
+section.block + section.block{border-top:1px solid var(--line);}
+.block-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap;}
+.block-head h2{
+  font-size:clamp(20px,2.6vw,26px);
+  letter-spacing:.05em;
+}
+.block-head .idx{
+  font-family:Georgia,serif;
+  color:var(--gold);
+  font-size:14px;
+  letter-spacing:.1em;
+}
+.block p{color:var(--ink-soft);margin-bottom:14px;}
+.block p:last-child{margin-bottom:0;}
+
+/* 题材列表 */
+.genre-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin-top:8px;
+}
+.genre-item{
+  background:var(--panel);
+  padding:22px 24px;
+}
+.genre-item h3{
+  font-size:17px;
+  letter-spacing:.04em;
+  margin-bottom:6px;
+}
+.genre-item .tag{
+  display:inline-block;
+  font-size:12px;
+  color:var(--accent);
+  border:1px solid var(--accent-soft);
+  background:var(--accent-soft);
+  padding:1px 8px;
+  margin-bottom:10px;
+  border-radius:2px;
+}
+.genre-item p{font-size:14.5px;margin-bottom:0;}
+
+/* 分级说明表 */
+.rating-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:8px;
+  font-size:14.5px;
+  background:var(--panel);
+}
+.rating-table th,.rating-table td{
+  border:1px solid var(--line);
+  padding:12px 14px;
+  text-align:left;
+  vertical-align:top;
+}
+.rating-table th{
+  background:#efe9db;
+  letter-spacing:.06em;
+  font-weight:700;
+  white-space:nowrap;
+}
+.rating-table td{color:var(--ink-soft);}
+
+/* 步骤 */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;
+  margin-top:10px;
+  counter-reset:step;
+}
+.step{
+  background:var(--panel);
+  border-left:3px solid var(--accent);
+  padding:20px 22px;
+  counter-increment:step;
+}
+.step h3{
+  font-size:16px;
+  margin-bottom:8px;
+}
+.step h3::before{
+  content:counter(step,decimal-leading-zero);
+  font-family:Georgia,serif;
+  color:var(--gold);
+  margin-right:10px;
+  font-size:15px;
+}
+.step p{font-size:14.5px;}
+
+/* 提示条 */
+.notice{
+  background:#fbf3e2;
+  border:1px solid #e4d3a8;
+  padding:20px 24px;
+  margin-top:26px;
+}
+.notice h3{font-size:16px;color:#8a5c12;margin-bottom:8px;letter-spacing:.04em;}
+.notice p{font-size:14.5px;color:#6e5527;margin-bottom:0;}
+
+/* 问答 */
+.faq-list{margin-top:8px;}
+.faq-item{
+  border-bottom:1px solid var(--line);
+  padding:20px 0;
+}
+.faq-item summary{
+  cursor:pointer;
+  list-style:none;
+  font-size:16.5px;
+  font-weight:700;
+  letter-spacing:.02em;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:flex-start;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"+";
+  font-family:Georgia,serif;
+  color:var(--accent);
+  font-size:22px;
+  line-height:1;
+  flex-shrink:0;
+}
+.faq-item[open] summary::after{content:"−";}
+.faq-item p{
+  margin-top:12px;
+  font-size:15px;
+}
+
+/* 结尾行动区 */
+.cta-band{
+  background:var(--ink);
+  color:#efe9db;
+  margin-top:56px;
+}
+.cta-band .wrap{
+  padding:46px 20px;
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:32px;
+  align-items:center;
+}
+.cta-band h2{
+  font-size:clamp(20px,2.6vw,26px);
+  letter-spacing:.06em;
+  margin-bottom:10px;
+  color:#fff;
+}
+.cta-band p{color:#c3bdae;font-size:15px;}
+.cta-band .cta-points{list-style:none;font-size:14px;}
+.cta-band .cta-points li{
+  padding-left:20px;
+  position:relative;
+  margin-bottom:8px;
+  color:#d8d2c3;
+}
+.cta-band .cta-points li::before{
+  content:"◆";
+  position:absolute;left:0;top:0;
+  color:var(--gold);
+  font-size:10px;
+  line-height:1.9;
+}
+
+footer.site-foot{
+  background:#1a1c23;
+  color:#8f8b81;
+  font-size:13.5px;
+}
+footer.site-foot .wrap{
+  padding:32px 20px 40px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+footer.site-foot h3{color:#cfc9bb;font-size:14px;letter-spacing:.1em;margin-bottom:10px;}
+footer.site-foot p{line-height:1.9;}
+footer.site-foot ul{list-style:none;font-size:13.5px;}
+footer.site-foot li{margin-bottom:6px;}
+footer.site-foot a{color:#a9a396;}
+footer.site-foot a:hover{color:var(--gold);}
+.foot-bottom{
+  border-top:1px solid #2c2f38;
+  text-align:center;
+  padding:14px 20px;
+  font-size:12.5px;
+  letter-spacing:.06em;
+}
+
+@media (max-width:820px){
+  .lead .wrap{grid-template-columns:1fr;gap:26px;}
+  .cta-band .wrap{grid-template-columns:1fr;}
+  footer.site-foot .wrap{grid-template-columns:1fr;}
+  .rating-table{display:block;overflow-x:auto;}
+}
+@media (max-width:560px){
+  body{font-size:15px;}
+  .site-head .wrap{align-items:flex-start;}
+  nav.mainnav ul{gap:14px;}
+  .block{padding:38px 0 6px;}
+  .genre-list{grid-template-columns:1fr;}
+  section.block + section.block{margin-top:0;}
+  .topbar .wrap{height:auto;padding:8px 0;font-size:12px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>题材说明 · 分级常识 · 理性观看</span>
+    <span class="stamp">内容仅作科普与讨论，不提供任何违规资源</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="brand-block">
+      <h1>鉴黄师动漫</h1>
+      <p class="sub">审核题材动画的设定、分级与观看常识</p>
+    </div>
+    <nav class="mainnav" aria-label="主导航">
+      <ul>
+        <li><a href="#about">主题说明</a></li>
+        <li><a href="#genre">题材分类</a></li>
+        <li><a href="#rating">分级标识</a></li>
+        <li><a href="#howto">筛选方式</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="lead">
+  <div class="wrap">
+    <div class="lead-text">
+      <span class="tagline">从职业设定到分级标识，一次讲清</span>
+      <p>鉴黄师动漫这个说法，通常指以内容审核、平台巡检、图像判定等工作为题材或背景的动画作品，也包括围绕这类作品展开的分级讨论。本站把零散的印象整理成可读的条目：这类动画里审核员角色如何被塑造，作品常用的喜剧、职场或悬疑叙事手法是什么，动画分级标识代表什么含义，观众又该如何按年龄提示挑选合适的内容。</p>
+    </div>
+    <aside class="lead-aside" aria-label="页面速览">
+      <h2>页面速览</h2>
+      <dl>
+        <dt>主题类型</dt><dd>动画题材科普与分级常识</dd>
+        <dt>适合读者</dt><dd>想了解审核题材动画的普通观众</dd>
+        <dt>核心内容</dt><dd>题材设定、角色职业、分级标识、筛选方式</dd>
+        <dt>阅读方式</dt><dd>按栏目顺序阅读，或直接查看常见问题</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <section class="block" id="about">
+      <div class="block-head">
+        <span class="idx">01</span>
+        <h2>鉴黄师动漫到底指哪一类作品</h2>
+      </div>
+      <p>围绕鉴黄师动漫的搜索，多数人想弄清的是一个概念边界：它既不是某个固定官方分类，也不是某一部作品的专名，而是观众对“审核员题材动画”的一种口语化称呼。理解这一点，才能避免把不同作品混为一谈。</p>
+      <p>从作品内容看，鉴黄师动漫大致落在三类语境中。第一类把内容审核当作职场背景，用日常喜剧呈现审核员面对海量素材时的判断压力；第二类把审核设定放进悬疑或科幻框架，让判定行为成为推动剧情的机关；第三类只是把“审核”当作一句台词或一个配角标签，主体仍是校园、恋爱等常见题材。</p>
+      <p>从观众需求看，搜索鉴黄师动漫的人往往关心两件事：这些作品是否涉及成人内容，以及在哪里能看到合规版本。前者需要结合动画分级标识判断，后者应通过正规播出渠道确认，而不是依赖来源不明的转载页面。</p>
+      <ul>
+        <li>它是对题材的口语概括，不是官方作品分类</li>
+        <li>职场、悬疑、科幻是这类设定常见的叙事外壳</li>
+        <li>是否适合观看，应看分级标识而非题材标签</li>
+        <li>观看渠道优先选择正规播出平台</li>
+      </ul>
+    </section>
+
+    <section class="block" id="genre">
+      <div class="block-head">
+        <span class="idx">02</span>
+        <h2>常见题材分类与叙事差异</h2>
+      </div>
+      <p>同样是审核设定，不同作品的处理方式差别很大。下面按叙事重心做一次梳理，方便读者根据自己想看的内容类型做选择。分类只描述创作倾向，不构成对任何具体作品的评价。</p>
+      <div class="genre-list">
+        <div class="genre-item">
+          <span class="tag">职场日常</span>
+          <h3>审核岗位的日常喜剧</h3>
+          <p>以工作流程、同事协作和判断标准为核心，用轻松节奏呈现审核员的一天，冲突多来自素材判断的分歧，而非外部对抗。</p>
+        </div>
+        <div class="genre-item">
+          <span class="tag">悬疑推理</span>
+          <h3>判定背后的线索追踪</h3>
+          <p>把审核行为变成破案工具，主角通过反复比对素材发现异常，剧情推进依赖信息差与推理过程，节奏偏紧。</p>
+        </div>
+        <div class="genre-item">
+          <span class="tag">科幻设定</span>
+          <h3>自动化审核的世界观</h3>
+          <p>假设内容判定交由系统完成，讨论规则、误判与人工复核的关系，适合喜欢设定推演的观众。</p>
+        </div>
+        <div class="genre-item">
+          <span class="tag">群像职场</span>
+          <h3>多人协作与标准之争</h3>
+          <p>重点不在单个角色，而在团队如何对同一素材得出不同结论，讨论规则一致性与个体经验的价值。</p>
+        </div>
+        <div class="genre-item">
+          <span class="tag">轻喜剧</span>
+          <h3>误会与反差制造笑点</h3>
+          <p>借助职业标签与生活场景的反差制造笑料，审核设定更像一层外衣，主体仍是人物关系。</p>
+        </div>
+        <div class="genre-item">
+          <span class="tag">社会议题</span>
+          <h3>平台规则与表达边界</h3>
+          <p>把审核放进更广的讨论里，关注规则如何制定、如何被理解，适合愿意边看边思考的读者。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="rating">
+      <div class="block-head">
+        <span class="idx">03</span>
+        <h2>动画分级标识的含义与识别方法</h2>
+      </div>
+      <p>讨论鉴黄师动漫时，分级标识是最容易被忽略却最实用的一环。不同地区、不同平台的分级体系并不相同，标识名称和年龄门槛各有差异，但基本逻辑一致：用醒目的标记提示作品适合的年龄段，并说明是否存在暴力、惊悚或成人向内容。</p>
+      <p>阅读分级时，先看年龄建议，再看内容提示，最后结合播出平台的说明。不要只看题材标签就下结论，也不要仅凭封面判断作品取向。下表整理了常见的标识类型与它们通常表达的意思，供对照参考。</p>
+      <table class="rating-table">
+        <thead>
+          <tr><th>标识类型</th><th>常见含义</th><th>阅读建议</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>全年龄向</td><td>内容温和，无强烈刺激画面</td><td>适合家庭共同观看，仍建议先看简介</td></tr>
+          <tr><td>建议指导</td><td>含轻度冲突或少量紧张情节</td><td>低龄观众宜有成年人陪同</td></tr>
+          <tr><td>限制级提示</td><td>含较强冲突、惊悚或成人议题</td><td>按平台年龄要求选择，未成年人应回避</td></tr>
+          <tr><td>平台自定标签</td><td>由播出方按地区规则附加</td><td>以平台页面说明为准，注意时效</td></tr>
+        </tbody>
+      </table>
+      <p>需要说明的是，分级标识只是判断起点，不是内容质量的评价。一部标为全年龄向的作品同样可能讨论严肃议题，一部限制级提示的作品也不等于低俗。把标识当作筛选工具，而不是价值判断，才更接近分级制度的设计初衷。</p>
+      <div class="notice">
+        <h3>关于“鉴黄师动漫”的常见误解</h3>
+        <p>题材涉及审核，并不意味着作品本身含有违规内容。判断依据始终是作品的分级标识与平台说明；遇到来源不明、宣称提供“未删减资源”的页面，应直接跳过，避免版权与安全风险。</p>
+      </div>
+    </section>
+
+    <section class="block" id="howto">
+      <div class="block-head">
+        <span class="idx">04</span>
+        <h2>挑选与观看的四个步骤</h2>
+      </div>
+      <p>面对大量同题材作品，按固定顺序筛选能省下不少时间。以下步骤适用于大多数观众的日常使用场景，不依赖任何特定平台。</p>
+      <div class="steps">
+        <div class="step">
+          <h3>确认作品信息</h3>
+          <p>先看简介、集数与制作信息，判断它属于职场日常还是悬疑设定，避免只凭标题关键词点开。</p>
+        </div>
+        <div class="step">
+          <h3>核对分级标识</h3>
+          <p>在播出页面找到年龄提示，确认是否适合自己的年龄段，未成年人应以监护人的判断为准。</p>
+        </div>
+        <div class="step">
+          <h3>选择正规渠道</h3>
+          <p>通过有版权说明的播出平台观看，避开要求安装不明插件或跳转多次的页面。</p>
+        </div>
+        <div class="step">
+          <h3>记录观看偏好</h3>
+          <p>把喜欢的叙事类型记下来，后续按题材而非标题关键词检索，能更快找到合适作品。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reading">
+      <div class="block-head">
+        <span class="idx">05</span>
+        <h2>如何理解审核员角色的塑造</h2>
+      </div>
+      <p>鉴黄师动漫里最值得留意的，往往不是审核场景本身，而是角色如何被安排在一个规则密集的位置上。创作者通常会给主角两种动机：一种出于生计进入岗位，另一种出于对规则的好奇主动钻研。前者容易写出日常感，后者更适合推进剧情。</p>
+      <p>观察角色时，可以留意三个细节：他面对模糊素材时的判断依据来自哪里，他与同事产生分歧时如何收场，以及作品是否愿意承认误判的存在。愿意呈现误判与复核的作品，通常对职业本身的理解更完整。</p>
+      <p>另一个常见处理是把审核员写成旁观者——他不参与素材中发生的故事，只负责判断。这种视角天然带有距离感，也给了作品讨论表达边界与观看责任的空间。读者在阅读这类作品时，可以把注意力放在判断过程，而不是画面本身。</p>
+      <ul>
+        <li>动机设定决定作品的叙事重心</li>
+        <li>判断依据是否交代清楚，影响可信度</li>
+        <li>能否呈现误判与复核，体现创作深度</li>
+        <li>旁观者视角更便于讨论表达边界</li>
+      </ul>
+    </section>
+
+    <section class="block" id="safety">
+      <div class="block-head">
+        <span class="idx">06</span>
+        <h2>观看时的注意事项与版权意识</h2>
+      </div>
+      <p>围绕鉴黄师动漫的搜索里，常混着一些来源不明的站点。它们往往用夸张标题吸引点击，实际页面与作品无关，甚至要求下载插件或填写信息。这类页面既没有版权说明，也无法确认内容来源，应当直接避开。</p>
+      <p>正规观看的第一步是确认渠道：页面应有清晰的版权或播出说明，播放环境干净，不强制跳转。第二步是尊重作品的使用范围，不自行录制、传播或二次剪辑。第三步是遇到年龄提示时如实遵守，不把分级标识当成可以绕过的门槛。</p>
+      <p>如果只是想了解题材梗概，阅读简介、制作信息和公开讨论已经足够，不必为了“看全”而寻找非正规来源。对分级内容保持距离，既是对自己负责，也是对创作环境的尊重。</p>
+      <div class="notice">
+        <h3>安全提示</h3>
+        <p>任何要求输入账号密码、支付费用或安装未知程序的“资源页”，都不属于正常观看流程。遇到此类页面请关闭并及时举报。</p>
+      </div>
+    </section>
+
+    <section class="block" id="faq">
+      <div class="block-head">
+        <span class="idx">07</span>
+        <h2>关于鉴黄师动漫的常见问题</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>鉴黄师动漫是官方分类吗？</summary>
+          <p>不是。它更接近观众对审核题材动画的口语称呼，并没有统一的官方定义。不同人对它的理解可能包括职场喜剧、悬疑设定或科幻世界观，判断具体作品时仍应以作品简介和分级标识为准。</p>
+        </details>
+        <details class="faq-item">
+          <summary>这类动画一定含有成人内容吗？</summary>
+          <p>不一定。题材涉及审核工作，并不等于作品本身含有违规内容。很多作品把审核当作职场背景或推理工具，整体基调偏轻松。是否适合观看，应看播出页面标注的年龄提示与内容说明。</p>
+        </details>
+        <details class="faq-item">
+          <summary>动画分级标识在哪里查看？</summary>
+          <p>通常在播出平台的作品详情页、播放器角落或简介区域。不同平台的展示位置不完全一致，如未找到相关提示，可参考平台的帮助说明，或选择标注更清晰的渠道。</p>
+        </details>
+        <details class="faq-item">
+          <summary>未成年人可以观看审核题材动画吗？</summary>
+          <p>应以作品分级标识和监护人的判断为准。全年龄向作品通常可以观看，标注限制级提示的作品则不建议未成年人接触。分级制度的意义就在于帮助不同年龄段选择合适的內容。</p>
+        </details>
+        <details class="faq-item">
+          <summary>为什么有些页面标题写着鉴黄师动漫，点开却没有相关内容？</summary>
+          <p>这类页面通常以关键词吸引点击，实际内容与标题无关，常见于缺乏版权说明的站点。建议直接关闭，改从有明确播出信息的平台检索作品名称。</p>
+        </details>
+        <details class="faq-item">
+          <summary>如何快速判断一部作品是否适合自己？</summary>
+          <p>按三步走：读简介确认题材类型，看分级标识确认年龄建议，再浏览公开的剧情概要判断叙事风格。三步都符合预期，再决定是否观看，比只看标题更可靠。</p>
+        </details>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>先懂分级，再选作品</h2>
+      <p>把鉴黄师动漫当作一个了解审核题材与分级常识的入口，比把它当作资源目录更接近阅读的本意。题材可以好奇，判断需要依据。</p>
+    </div>
+    <ul class="cta-points">
+      <li>题材分类帮助你缩小选择范围</li>
+      <li>分级标识提示适合的年龄段</li>
+      <li>正规渠道保障观看与版权安全</li>
+      <li>遇到不明来源页面，直接跳过</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <h3>关于本站</h3>
+      <p>本站围绕鉴黄师动漫这一题材称呼，整理审核题材动画的分类方式、角色塑造与分级常识，内容以科普与阅读参考为目的，不提供任何资源下载或播放地址。所有作品信息请以正规平台页面为准。</p>
+    </div>
+    <div>
+      <h3>栏目导航</h3>
+      <ul>
+        <li><a href="#about">主题说明</a></li>
+        <li><a href="#genre">题材分类</a></li>
+        <li><a href="#rating">分级标识</a></li>
+        <li><a href="#howto">筛选方式</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    内容仅供题材讨论与分级知识参考，请遵守当地法规与平台规则，理性观看。
+  </div>
+</footer>
+
+</body>
+</html>
